@@ -35,7 +35,7 @@ html{
   background-image: url("../images/background-2.png");
   background-size: cover;
   width: 70vw;
-  height: 67vh;
+  height: 75vh;
   position: relative;
   box-shadow: 5px 13px 30px 3px rgba(0, 0, 0, 0.31);
 }
@@ -46,8 +46,8 @@ html{
   position: absolute;
   top: -5%;
   right: 8%;
-  width: 28vw;
-  height: 73vh;
+  width: 27vw;
+  height: 82vh;
 }
 
 .container-description{
@@ -58,9 +58,11 @@ html{
 
 a{
   font-family: "HindRegular";
-  font-size: 1.6vw;
+  font-size: 1.7vw;
   text-decoration: none;
-  color: #DB8A74
+  color: #4A4E69;
+  line-height: 40px;
+;
 }
 
 h1{
@@ -68,14 +70,16 @@ h1{
   font-family:"HindSemiBold";
   font-weight: 600;
   font-size: 3em;
-  line-height: 68px;
+  line-height: 52px;
   padding-top: 5%;
   text-transform: uppercase;
 }
 
 @media screen and (min-width: 1600px) {
   h1 {
-    font-size: 4em; } 
+    font-size: 4em; 
+    line-height: 68px;
+} 
   }
 
 
@@ -90,6 +94,8 @@ h2{
   font-size: 2em;
   line-height: 40px;
 }
+
+
 
 .text-style-title-1{
   font-family: "HindSemiBold";
@@ -135,14 +141,28 @@ h2{
 }
 
 
+/* .border-bottom-hover{
+  border-bottom: 3px solid #DB8A74 ;
+  padding-bottom: 5px;
+} */
 
+.connection:hover{
+  border-bottom: 3px solid #DB8A74 ;
+  color:#DB8A74 ;
+}
+
+form{
+  margin-left: 17%;
+  margin-right: 17%;
+  margin-top: 29%;
+}
 
 .header-form{
   display: flex;
   justify-content: center;
   justify-content: space-between;
-  padding: 20%;
-  width : 17vw;
+  width:  100%;
+
 
 }
 
@@ -163,3 +183,20 @@ h2{
   height: 100px;
 }
 /*# sourceMappingURL=style.css.map */
+
+.form-control{
+  margin-top: 20%;
+  color: #4A4E69;
+}
+
+input{
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #4A4E69;
+  outline: none;
+}
