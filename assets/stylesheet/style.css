@@ -33,6 +33,7 @@ html{
 
 .container{
   background-image: url("../images/background-2.png");
+  background-size: cover;
   width: 70vw;
   height: 67vh;
   position: relative;
@@ -66,12 +67,17 @@ h1{
 
   font-family:"HindSemiBold";
   font-weight: 600;
-  font-size: 3.7vw;
-  /* font-size: 70px; */
-  line-height: 1;
+  font-size: 3em;
+  line-height: 68px;
   padding-top: 5%;
   text-transform: uppercase;
 }
+
+@media screen and (min-width: 1600px) {
+  h1 {
+    font-size: 4em; } 
+  }
+
 
 
 
@@ -81,9 +87,55 @@ h1{
 h2{
   font-family: "HindRegular";
   font-weight: normal;
-  font-size: 1.6vw;
+  font-size: 2em;
   line-height: 40px;
 }
+
+.text-style-title-1{
+  font-family: "HindSemiBold";
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.text-style-title-2{
+  font-family: "HindRegular";
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.text-style-subtitle-m{
+  font-family: "HindRegular";
+  font-size: 24px;
+  line-height: 25px;
+}
+
+.text-style-subtitle-s{
+  font-family: "HindRegular";
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.text-style-body-l{
+  font-family: "HindSemiBold";
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.text-style-body-m{
+  font-family: "HindRegular";
+  font-size: 15px;
+  line-height: 22px;
+}
+
+
+.text-style-body-s{
+  font-family: "HindRegular";
+  font-size: 14px;
+  line-height: 22px;
+}
+
+
+
 
 .header-form{
   display: flex;
