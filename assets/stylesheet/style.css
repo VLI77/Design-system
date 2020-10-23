@@ -31,6 +31,7 @@ html{
   position: absolute;
   top: 0;
   right: 8%;
+  border-radius: 7.5px;
 }
 
 .description{
@@ -65,4 +66,10 @@ h1,p{
   width: 100%;
   height: 100px;
 }
+
+.header-form{
+  width: 100%;
+  height: 18vh;
+}
+
 /*# sourceMappingURL=style.css.map */
