@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
@@ -13,21 +14,42 @@
         <div class="container-form">
             <form>
               <div class="header-form">
-               <a href="#" class="connection">Log In</a>
-               <a href="#" class="connection">Register</a> 
+               <a href="#" class="connection text-style-title-2 login-nav">Log In</a>
+               <a href="#" class="connection text-style-title-2 register-nav">Register</a> 
               </div>
-              <div class="form-control">
-                <label class="text-style-body-m">Username</label>
-                <input type="text"></input>
+              <div class="login">
+                <div class="form-control">
+                  <label class="text-style-subtitle-s">Username</label>
+                  <input type="text"></input>
+                </div>
+  
+                <div class="form-control">
+                  <label class="text-style-subtitle-s">Password</label>
+                  <input type="text"></input>
+                </div>
+                <div class="flexbox-form-button-login">
+                  <a class="forgot text-style-body-m">Forgot Password ?</a>
+                  <button class="btn btn-sm btn-callToAction text-style-subtitle-m">Log In</button>
+                </div>
               </div>
 
-              <div class="form-control">
-                <label class="text-style-body-m">Password</label>
-                <input type="text"></input>
-              </div>
-              <div class="flexbox-space">
-                <a class="forgot">Forgot Passord ?</a>
-                <button class="btn btn-sm btn-callToAction">Log In</button>
+              <div class="register">
+                <div class="form-control">
+                  <label class="text-style-body-m">Username</label>
+                  <input type="text"></input>
+                </div>
+  
+                <div class="form-control">
+                  <label class="text-style-body-m">Email</label>
+                  <input type="text"></input>
+                </div>
+                <div class="form-control">
+                  <label class="text-style-body-m">Password</label>
+                  <input type="text"></input>
+                </div>
+                <div class="flexbox-form-button-register">
+                  <button class="btn btn-sm btn-callToAction text-style-subtitle-m">Register</button>
+                </div>
               </div>
             </form>
         </div>

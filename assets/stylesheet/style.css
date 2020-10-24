@@ -71,20 +71,21 @@ html{
   color: #F2E9E4;
 }
 
- .connection{
-  font-family: "HindRegular";
-  font-size: 1.7vw;
-  text-decoration: none;
-  color: #4A4E69;
-  line-height: 40px;
+.connection{
+  color:var(--background-color) ;
+
 }
+
 
 .connection:hover{
   border-bottom:  3px solid var(--interaction-color) ;
   color:var(--interaction-color) ;
-  margin-bottom: -3px;
 }
 
+.login-nav{
+  border-bottom:  3px solid var(--interaction-color) ;
+  color:var(--interaction-color) ;
+}
 
 
 h1{
@@ -112,9 +113,11 @@ h2{
   line-height: 56px;
 }
 
+
 .text-style-title-2{
   font-family: "HindRegular";
   font-size: 32px;
+  text-decoration: none;
   line-height: 40px;
 }
 
@@ -195,7 +198,6 @@ input{
 
 .btn{
   border-radius: 0.4vw;
-  font-size: 1.25vw;
   width: 100%;
 
 }
@@ -212,36 +214,136 @@ input{
 .btn-callToAction{
   background: var(--interaction-color);
   color:white;
-
 }
 
-.flexbox-space{
+.btn-callToAction:hover{
+  background:#CF5534
+}
+
+.btn-callToAction:active{
+  background: var(--interaction-color);
+  opacity: 75%;
+  
+}
+
+.btn-callToAction:focus{
+  border: 2px solid #CF5534;  
+}
+
+.flexbox-form-button-login{
   display: flex;
   margin-top: 5.6vh;
   justify-content: space-between;
   align-items: center;
 }
 
+.flexbox-form-button-register{
+  display: flex;
+  margin-top: 5.6vh;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .forgot{
-  font-size: 0.78vw;
-  font-family: "HindRegular";
   color: var(--background-color);
 }
 
-.second{
+.register{
   display: none;
 }
 
-.square{
-  background-color: red;
-  width: 100%;
-  height: 100px;
+
+
+@media screen and (max-width: 1200px) {
+
+
+  .container{
+    visibility: hidden;
+  }
+  .container-form{
+    visibility:visible;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 73vw;
+  }
+
+  
+
+
+  .btn{
+    width: 175px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 7.5px;
+
+  }
+
+  .forgot{
+    margin-top: 40px;
+    font-size: 14px;
+  }
+
+}
+  
+@media screen and (max-width: 500px) {
+
+.text-style-title-1{
+  font-family: "HindSemiBold";
+  font-size: 48px;
+  line-height: 56px;
 }
 
-.square2{
-  background-color: yellow;
-  width: 100%;
-  height: 100px;
+
+.text-style-title-2{
+  font-family: "HindRegular";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  text-decoration: none;
 }
+
+.text-style-subtitle-m{
+  font-family: "HindRegular";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.text-style-subtitle-s{
+  font-family: "HindRegular";
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.text-style-body-l{
+  font-family: "HindSemiBold";
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.text-style-body-m{
+  font-family: "HindRegular";
+  font-size: 14px;
+  line-height: 22px;
+}
+
+
+.text-style-body-s{
+  font-family: "HindRegular";
+  font-size: 14px;
+  line-height: 22px;
+}
+
+
+.flexbox-form-button-login, .flexbox-form-button-register {
+  flex-direction: column-reverse;
+
+}  
+
+}
+
+
 /*# sourceMappingURL=style.css.map */
 
