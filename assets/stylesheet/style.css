@@ -62,7 +62,7 @@ html{
   top: -5%;
   right: 7%;
   width: 28vw;
-  height: 73vh;
+  height: 115%;
 }
 
 .container-description{
@@ -217,14 +217,6 @@ html{
   
 }
 
-
-/* .border-bottom-hover{
-  border-bottom: 3px solid #DB8A74 ;
-  padding-bottom: 5px;
-} */
-
-
-
 form{
   margin-left: 17%;
   margin-right: 17%;
@@ -236,8 +228,6 @@ form{
   justify-content: center;
   justify-content: space-between;
   width:  100%;
-
-
 }
 
 .form-control{
@@ -264,7 +254,6 @@ input{
 .btn{
   border-radius: 0.4vw;
   width: 100%;
-
 }
 
 .btn-sm{
@@ -288,7 +277,6 @@ input{
 .btn-callToAction:active{
   background: var(--interaction-color);
   opacity: 75%;
-  
 }
 
 .btn-callToAction:focus{
@@ -344,17 +332,13 @@ input{
     margin-top: 40px;
     font-size: 14px;
   }
-
 }
 
 @media screen and (max-width: 800px) {
 .flexbox-form-button-login, .flexbox-form-button-register {
   flex-direction: column-reverse;
-
 }  
 
 }
 
-
-/*# sourceMappingURL=style.css.map */
 
