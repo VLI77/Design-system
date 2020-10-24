@@ -36,6 +36,7 @@
 html{
   background-image: url("../images/background_1.png");
   background-size: cover;
+  background-attachment: fixed;
   height: 100%;
   overflow-y: hidden;
   display: flex;
@@ -46,8 +47,8 @@ html{
 .container{
   background-image: url("../images/background-2.png");
   background-size: cover;
-  width: 70vw;
-  height: 75vh;
+  width: 72vw;
+  height: 66vh;
   position: relative;
   box-shadow: 5px 13px 30px 3px rgba(0, 0, 0, 0.31);
 }
@@ -59,9 +60,9 @@ html{
   background: rgba(242, 233, 228, 0.77);
   position: absolute;
   top: -5%;
-  right: 8%;
-  width: 27vw;
-  height: 82vh;
+  right: 7%;
+  width: 28vw;
+  height: 73vh;
 }
 
 .container-description{
@@ -70,46 +71,37 @@ html{
   color: #F2E9E4;
 }
 
-a{
+ .connection{
   font-family: "HindRegular";
   font-size: 1.7vw;
   text-decoration: none;
   color: #4A4E69;
   line-height: 40px;
+}
 
-;
+.connection:hover{
+  border-bottom:  3px solid var(--interaction-color) ;
+  color:var(--interaction-color) ;
+  margin-bottom: -3px;
 }
 
 
 
 h1{
-
   font-family:"HindSemiBold";
   font-weight: 600;
-  font-size: 3em;
-  line-height: 52px;
+    font-size: 3.335vw;
+  line-height: 1.05;
   padding-top: 5%;
   text-transform: uppercase;
 }
-
-@media screen and (min-width: 1600px) {
-  h1 {
-    font-size: 4em; 
-    line-height: 68px;
-} 
-  }
-
-
-
-
-
 
 
 h2{
   font-family: "HindRegular";
   font-weight: normal;
-  font-size: 2em;
-  line-height: 40px;
+  font-size: 1.67vw;
+  line-height: 1.3;
 }
 
 
@@ -163,16 +155,12 @@ h2{
   padding-bottom: 5px;
 } */
 
-.connection:hover{
-  border-bottom:  3px solid var(--interaction-color) ;
-  color:var(--interaction-color) ;
-  margin-bottom: -3px;
-}
+
 
 form{
   margin-left: 17%;
   margin-right: 17%;
-  margin-top: 29%;
+  margin-top: 12.5vh;
 }
 
 .header-form{
@@ -185,9 +173,16 @@ form{
 }
 
 .form-control{
-  margin-top: 20%;
+  margin-top: 5.6vh;
   color: var(--background-color);
 }
+
+button,
+input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+ }
 
 input{
   width: 100%;
@@ -195,10 +190,42 @@ input{
   font-weight: 400;
   line-height: 1.5;
   color: var(--background-color);
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid var(--background-color);
-  outline: none;
+  border-bottom: 1px solid var(--interface-color);
+}
+
+.btn{
+  border-radius: 0.4vw;
+  font-size: 1.25vw;
+  width: 100%;
+
+}
+
+.btn-sm{
+  width: 9.1vw;
+  height: 4.6vh;
+}
+
+.btn-l{
+  width: 220px;
+  height: 4.6vh;
+}
+.btn-callToAction{
+  background: var(--interaction-color);
+  color:white;
+
+}
+
+.flexbox-space{
+  display: flex;
+  margin-top: 5.6vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forgot{
+  font-size: 0.78vw;
+  font-family: "HindRegular";
+  color: var(--background-color);
 }
 
 .second{
