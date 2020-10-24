@@ -12,6 +12,19 @@
   font-family: "HindBold";
   src: url("../../assets/fonts/HindSiliguri-Bold.ttf");
 }
+
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-error: var(--color-red);
+  --color-success: var(--color-green); 
+  --background-color:#4A4E69;
+  --interface-color:#22223B;
+  --interface-color-2:#F2E9E4;
+  --interaction-color:#DB8A74;
+  --validation-color:#3D8232;
+  --error-color:#9E0000
+}
 *{
   margin: 0;
   padding: 0;
@@ -27,8 +40,7 @@ html{
   overflow-y: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;
-  
+  align-items: center;  
 }
 
 .container{
@@ -39,6 +51,8 @@ html{
   position: relative;
   box-shadow: 5px 13px 30px 3px rgba(0, 0, 0, 0.31);
 }
+
+
 
 .container-form{
   border-radius: 7.5px;
@@ -62,8 +76,11 @@ a{
   text-decoration: none;
   color: #4A4E69;
   line-height: 40px;
+
 ;
 }
+
+
 
 h1{
 
@@ -147,8 +164,9 @@ h2{
 } */
 
 .connection:hover{
-  border-bottom: 3px solid #DB8A74 ;
-  color:#DB8A74 ;
+  border-bottom:  3px solid var(--interaction-color) ;
+  color:var(--interaction-color) ;
+  margin-bottom: -3px;
 }
 
 form{
@@ -166,6 +184,22 @@ form{
 
 }
 
+.form-control{
+  margin-top: 20%;
+  color: var(--background-color);
+}
+
+input{
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--background-color);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--background-color);
+  outline: none;
+}
 
 .second{
   display: none;
@@ -184,19 +218,3 @@ form{
 }
 /*# sourceMappingURL=style.css.map */
 
-.form-control{
-  margin-top: 20%;
-  color: #4A4E69;
-}
-
-input{
-  width: 100%;
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #495057;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #4A4E69;
-  outline: none;
-}
