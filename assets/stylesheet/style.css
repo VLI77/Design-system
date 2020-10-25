@@ -266,6 +266,45 @@ input{
   width: 220px;
   height: 4.6vh;
 }
+
+.btn-main{
+  background: var(--background-color);
+  color:white;
+}
+
+.btn-main:hover{
+  background:#2D2F3C
+}
+
+.btn-main:active{
+  background: var(--background-color);
+  opacity: 75%;
+}
+
+.btn-main:focus{
+  border: 2px solid #2D2F3C;  
+  border: none;
+}
+
+.btn-second{
+  background: var(--interface-color);
+  color:white;
+}
+
+.btn-second:hover{
+  background:#13132D
+}
+
+.btn-second:active{
+  background: var(--interface-color);
+  opacity: 75%;
+}
+
+.btn-second:focus{
+  border: 2px solid #13132D;  
+  border: none;
+}
+
 .btn-callToAction{
   background: var(--interaction-color);
   color:white;
