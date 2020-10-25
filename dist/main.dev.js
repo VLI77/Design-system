@@ -7,7 +7,12 @@ var login = document.querySelector('.login');
 var register = document.querySelector('.register');
 button_register.addEventListener("click", change);
 button_login.addEventListener("click", change2);
+var icon_login = document.querySelector('.icon-password-login');
+var icon_register = document.querySelector('.icon-password-register');
 var state = new Boolean();
+var icon_state = new Boolean();
+var input_password_login = document.querySelector('.input-password-login');
+var input_password_register = document.querySelector('.input-password-register');
 
 function change() {
   if (state == false) {
@@ -32,3 +37,26 @@ function change2() {
     button_register.style.borderBottom = "none";
   }
 }
+
+icon_login.addEventListener('click', function () {
+  if (icon_state == true) {
+    icon_login.src = 'assets/images/icon-on.png';
+    icon_state = false;
+    input_password_login.setAttribute('type', 'text');
+  } else if (icon_state == false) {
+    icon_login.src = 'assets/images/icon-off.png';
+    icon_state = true;
+    input_password_login.setAttribute('type', 'password');
+  }
+});
+icon_register.addEventListener('click', function () {
+  if (icon_state == true) {
+    icon_register.src = 'assets/images/icon-on.png';
+    icon_state = false;
+    input_password_register.setAttribute('type', 'text');
+  } else if (icon_state == false) {
+    icon_register.src = 'assets/images/icon-off.png';
+    icon_state = true;
+    input_password_register.setAttribute('type', 'password');
+  }
+});

@@ -90,8 +90,6 @@ html{
 
 
 
-
-
 .title{
   padding-top: 5%;
   margin-bottom: 1%;
@@ -250,6 +248,11 @@ input{
   line-height: 1.5;
   color: var(--background-color);
   border-bottom: 1px solid var(--interface-color);
+}
+
+.icon-password-login, .icon-password-register{
+  position: absolute;
+  right: 20%;
 }
 
 .btn{
