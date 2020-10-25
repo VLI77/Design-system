@@ -169,13 +169,19 @@ html{
   font-size: 20px;
   line-height: 25px;
 }
+
+.text-style-subtitle-s-bold{
+  font-family: "HindBold";
+  font-size: 20px;
+  line-height: 25px;
+}
 @media screen and (max-width: 1550px) {
-  .text-style-subtitle-s{
+  .text-style-subtitle-s-bold{
     font-size: 17px;
   }
 }
 @media screen and (max-width: 800px) {
-  .text-style-subtitle-s{
+  .text-style-subtitle-s-bold{
     font-size: 15px;
   }
 }
@@ -392,9 +398,6 @@ input{
   height: auto;
 
 }
-
-
-
 }
 
 
