@@ -77,8 +77,8 @@ html{
 
 
 .connection:hover{
-  border-bottom:  3px solid var(--interaction-color) ;
-  color:var(--interaction-color) ;
+  border-bottom:  3px solid var(--interaction-color)!important ;
+  color:var(--interaction-color)!important ;
 }
 
 .login-nav{
@@ -338,6 +338,12 @@ input{
 .flexbox-form-button-login, .flexbox-form-button-register {
   flex-direction: column-reverse;
 }  
+.container-form{
+  padding-bottom: 10vh;
+
+}
+
+
 
 }
 
