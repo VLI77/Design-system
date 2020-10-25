@@ -361,6 +361,13 @@ input{
   align-items: center;
 }
 
+.flexbox-form-button-reset{
+  display: flex;
+  margin-top: 5.6vh;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .forgot{
   color: var(--background-color);
 }
@@ -407,14 +414,14 @@ input{
     margin-top: 24.5%;
   }
 
-.flexbox-form-button-login, .flexbox-form-button-register {
-  flex-direction: column-reverse;
-}  
-.container-form{
-  padding-bottom: 10vh;
-  height: auto;
+  .flexbox-form-button-login, .flexbox-form-button-register, .flexbox-form-button-reset {
+    flex-direction: column-reverse;
+  }  
+  .container-form{
+    padding-bottom: 10vh;
+    height: auto;
 
-}
+  }
 }
 
 
