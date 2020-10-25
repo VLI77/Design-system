@@ -170,6 +170,17 @@ html{
   line-height: 25px;
 }
 
+@media screen and (max-width: 1550px) {
+  .text-style-subtitle-s{
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .text-style-subtitle-s{
+    font-size: 15px;
+  }
+}
+
 .text-style-subtitle-s-bold{
   font-family: "HindBold";
   font-size: 20px;
@@ -238,6 +249,7 @@ form{
 .form-control{
   margin-top: 5.6vh;
   color: var(--background-color);
+  position: relative;
 }
 
 button,
@@ -253,9 +265,14 @@ input{
   border-bottom: 1px solid var(--interface-color);
 }
 
-.icon-password-login, .icon-password-register{
+.icon-password, .icon-valid, .icon-error{
   position: absolute;
-  right: 20%;
+  right: 5%;
+}
+
+.icon-error, .icon-valid, .icon-error-register, .icon-valid-login{
+  display: none;
+  top: 50%
 }
 
 .btn{

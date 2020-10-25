@@ -6,12 +6,20 @@ let register = document.querySelector('.register')
 button_register.addEventListener("click",change)
 button_login.addEventListener("click",change2)
 
-let icon_login = document.querySelector('.icon-password-login')
-let icon_register = document.querySelector('.icon-password-register')
+let icon_login = document.querySelectorAll('.icon-password')
 let state = new Boolean
 let icon_state = new Boolean
-let input_password_login=document.querySelector('.input-password-login')
-let input_password_register=document.querySelector('.input-password-register')
+let icon_valid= document.querySelectorAll('.icon-valid')
+let icon_error= document.querySelectorAll('.icon-error')
+let input_password=document.querySelectorAll('.input-password')
+let input_username = document.querySelectorAll('.username')
+let input_mail = document.querySelector('.mail')
+
+
+
+
+
+
 
  function change(){
     if(state == false){
@@ -37,33 +45,84 @@ function change2(){
     }
 }
 
-icon_login.addEventListener('click',()=>{
-    if( icon_state==true){
-        icon_login.src=('assets/images/icon-on.png')
-        icon_state=false
-        input_password_login.setAttribute('type','text')
-    }
+ 
+input_username.forEach((input_username) => {
+    input_username.addEventListener('keydown',()=>{
 
-    else if(icon_state==false){
-        icon_login.src=('assets/images/icon-off.png')
-        icon_state=true
-        input_password_login.setAttribute('type','password')
-    }
+        if(input_username.value.length<7){
+            input_username.style.borderColor="red"
+            input_username.style.color="red"
+            icon_error.forEach((icon_error) => {
+                icon_error.style.display="block"
+            });
+            icon_valid.forEach((icon_valid) => {
+                icon_valid.style.display="none"
+            });
+         }
+        
+         else{
+            input_username.style.borderColor="green"
+            input_username.style.color="green"
+            icon_error.forEach((icon_error) => {
+                icon_error.style.display="none"
+            });
+            icon_valid.forEach((icon_valid) => {
+                icon_valid.style.display="block"
+            });
+         } 
+    
 })
+});
 
-icon_register.addEventListener('click',()=>{
-    if( icon_state==true){
-        icon_register.src=('assets/images/icon-on.png')
-        icon_state=false
-        input_password_register.setAttribute('type','text')
-    }
+//     input_mail.addEventListener('keydown',()=>{
 
-    else if(icon_state==false){
-        icon_register.src=('assets/images/icon-off.png')
-        icon_state=true
-        input_password_register.setAttribute('type','password')
-    }
-})
+//         if(input_mail.value.length<7){
+//             input_mail.style.borderColor="red"
+//             input_mail.style.color="red"
+//             icon_error.forEach((icon_error) => {
+//                 icon_error.style.display="block"
+//             });
+//             icon_valid.forEach((icon_valid) => {
+//                 icon_valid.style.display="none"
+//             });
+//          }
+        
+//          else{
+//             input_mail.style.borderColor="green"
+//             input_mail.style.color="green"
+//             icon_error.forEach((icon_error) => {
+//                 icon_error.style.display="none"
+//             });
+//             icon_valid.forEach((icon_valid) => {
+//                 icon_valid.style.display="block"
+//             });
+//          } 
+    
+// });
+ 
+
+
+
+
+icon_login.forEach((icon_login) => {
+    icon_login.addEventListener('click',()=>{
+        if( icon_state==true){
+            icon_login.src=('assets/images/icon-on.png')
+            icon_state=false
+            input_password.forEach((input_password)=>{
+                input_password.setAttribute('type','text')
+            })
+        }
+    
+        else if(icon_state==false){
+            icon_login.src=('assets/images/icon-off.png')
+            icon_state=true
+            input_password.forEach((input_password)=>{
+                input_password.setAttribute('type','password')
+            })        }
+    })
+    
+});
 
 
 
