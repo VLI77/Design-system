@@ -220,7 +220,8 @@ html{
 form{
   margin-left: 17%;
   margin-right: 17%;
-  margin-top: 12.5vh;
+  margin-top: 24.5%;
+
 }
 
 .header-form{
@@ -310,6 +311,9 @@ input{
 @media screen and (max-width: 1200px) {
 
 
+  form{
+    margin-top: 12.5%;
+  }
   .container{
     visibility: hidden;
   }
@@ -334,12 +338,18 @@ input{
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
+
+  form{
+    margin-top: 24.5%;
+  }
+
 .flexbox-form-button-login, .flexbox-form-button-register {
   flex-direction: column-reverse;
 }  
 .container-form{
   padding-bottom: 10vh;
+  height: auto;
 
 }
 
