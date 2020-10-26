@@ -91,16 +91,17 @@ html{
 
 
 .title{
-  padding-top: 5%;
+  padding-top: 7%;
   margin-bottom: 1%;
   text-transform: uppercase;
 }
 
 
 .text-style-title-1{
+  width: 600px;
   font-family: "HindSemiBold";
   font-weight: 600;
-  font-size: 48px;
+  font-size: 68px;
   line-height: 56px;
 }
 
@@ -108,7 +109,6 @@ html{
   .text-style-title-1{
     font-size: 36px;
     line-height: 46px;
-
   }
   
 }
