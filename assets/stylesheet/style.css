@@ -370,6 +370,7 @@ input{
 
 .forgot{
   color: var(--background-color);
+  text-decoration: none;
 }
 
 .register{
