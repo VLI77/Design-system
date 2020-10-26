@@ -62,29 +62,7 @@ input_username.forEach(function (input_username) {
       });
     }
   });
-}); //     input_mail.addEventListener('keydown',()=>{
-//         if(input_mail.value.length<7){
-//             input_mail.style.borderColor="red"
-//             input_mail.style.color="red"
-//             icon_error.forEach((icon_error) => {
-//                 icon_error.style.display="block"
-//             });
-//             icon_valid.forEach((icon_valid) => {
-//                 icon_valid.style.display="none"
-//             });
-//          }
-//          else{
-//             input_mail.style.borderColor="green"
-//             input_mail.style.color="green"
-//             icon_error.forEach((icon_error) => {
-//                 icon_error.style.display="none"
-//             });
-//             icon_valid.forEach((icon_valid) => {
-//                 icon_valid.style.display="block"
-//             });
-//          } 
-// });
-
+});
 icon_login.forEach(function (icon_login) {
   icon_login.addEventListener('click', function () {
     if (icon_state == true) {
