@@ -91,13 +91,14 @@ html{
 
 
 .title{
-  padding-top: 5%;
+  padding-top: 7%;
   margin-bottom: 1%;
   text-transform: uppercase;
 }
 
 
 .text-style-title-1{
+  width: 600px;
   font-family: "HindSemiBold";
   font-weight: 600;
   font-size: 3em;
@@ -108,7 +109,6 @@ html{
   .text-style-title-1{
     font-size: 2.250em;
     line-height: 46px;
-
   }
   
 }
@@ -380,6 +380,7 @@ input{
 }
 
 .forgot:hover{
+  color: #DB8A74;
   text-decoration: underline;
 }
 
