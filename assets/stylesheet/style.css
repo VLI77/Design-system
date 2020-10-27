@@ -100,13 +100,13 @@ html{
 .text-style-title-1{
   font-family: "HindSemiBold";
   font-weight: 600;
-  font-size: 48px;
+  font-size: 3em;
   line-height: 56px;
 }
 
 @media screen and (max-width: 1550px) {
   .text-style-title-1{
-    font-size: 36px;
+    font-size: 2.250em;
     line-height: 46px;
 
   }
@@ -116,7 +116,7 @@ html{
 
 @media screen and (max-width: 800px) {
   .text-style-title-1{
-    font-size: 24px;
+    font-size: 1.5em;
   }
   
 }
@@ -124,7 +124,7 @@ html{
 
 .text-style-title-2{
   font-family: "HindRegular";
-  font-size: 32px;
+  font-size: 2em;
   text-decoration: none;
   line-height: 40px;
   font-weight: normal;
@@ -132,101 +132,107 @@ html{
 
 @media screen and (max-width: 1550px) {
   .text-style-title-2{
-    font-size: 24px;
+    font-size: 1.5em;
   }
   
 }
 
 @media screen and (max-width: 800px) {
   .text-style-title-2{
-    font-size: 20px;
+    font-size: 1.25em;
   }
   
 }
 
 .text-style-subtitle-m{
   font-family: "HindRegular";
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: 25px;
 }
 
 @media screen and (max-width: 1550px) {
   .text-style-subtitle-m{
-    font-size: 20px;
+    font-size: 1.25em;
   }
   
 }
 
 @media screen and (max-width: 800px) {
   .text-style-subtitle-m{
-    font-size: 20px;
+    font-size: 1.25em;
   }
   
 }
 
 .text-style-subtitle-s{
   font-family: "HindRegular";
-  font-size: 20px;
+  font-size: 1.25em;
   line-height: 25px;
 }
 
 @media screen and (max-width: 1550px) {
   .text-style-subtitle-s{
-    font-size: 17px;
+    font-size: 1.063em;
   }
 }
 @media screen and (max-width: 800px) {
   .text-style-subtitle-s{
-    font-size: 15px;
+    font-size: 0.938em;
   }
 }
 
 .text-style-subtitle-s-bold{
   font-family: "HindBold";
-  font-size: 20px;
+  font-size: 1.250em;
   line-height: 25px;
 }
 @media screen and (max-width: 1550px) {
   .text-style-subtitle-s-bold{
-    font-size: 17px;
+    font-size: 1.063em;
   }
 }
 @media screen and (max-width: 800px) {
   .text-style-subtitle-s-bold{
-    font-size: 15px;
+    font-size: 0.938em;
   }
 }
 
 
 .text-style-body-l{
   font-family: "HindSemiBold";
-  font-size: 15px;
+  font-size: 0.938em;
   line-height: 22px;
 }
 
 @media screen and (max-width: 800px) {
   .text-style-body-l{
-    font-size: 10px;
+    font-size: 0.625em;
     line-height: 22px;
   }
 }
 
 .text-style-body-m{
   font-family: "HindRegular";
-  font-size: 15px;
+  font-size: 0.938em;
   line-height: 22px;
 }
 
 @media screen and (max-width: 800px) {
   .text-style-body-m{
-    font-size: 14px;
+    font-size: 0.875em;
   }
   
+}
+.text-style-body-s{
+  font-family: "HindRegular";
+  font-size: 0.875em;
+  line-height: 22px;
+
 }
 @media screen and (max-width: 800px) {
 
   .text-style-body-s{
-    font-size: 14px;
+    font-size: 0.875em;
   }
   
   
@@ -364,7 +370,7 @@ input{
 .flexbox-form-button-reset{
   display: flex;
   margin-top: 5.6vh;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 }
 
