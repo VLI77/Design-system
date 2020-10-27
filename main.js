@@ -59,7 +59,8 @@ input_username.forEach((input_username) => {
                 icon_valid.style.display="none"
             });
          }
-        
+
+       
          else{
             input_username.style.borderColor="green"
             input_username.style.color="green"

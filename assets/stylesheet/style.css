@@ -19,6 +19,7 @@
   --color-error: var(--color-red);
   --color-success: var(--color-green); 
   --background-color:#4A4E69;
+  --background-color-2: #2D2F3C;
   --interface-color:#22223B;
   --interface-color-2:#F2E9E4;
   --interaction-color:#DB8A74;
@@ -291,7 +292,7 @@ input{
 }
 
 .btn-l{
-  width: 220px;
+  width: 14vw;
   height: 4.6vh;
 }
 
@@ -301,7 +302,7 @@ input{
 }
 
 .btn-main:hover{
-  background:#2D2F3C
+  background:var(--background-color-2)
 }
 
 .btn-main:active{
@@ -310,7 +311,7 @@ input{
 }
 
 .btn-main:focus{
-  border: 2px solid #2D2F3C;  
+  border: 2px solid var(--background-color-2);  
   border: none;
 }
 
@@ -320,7 +321,7 @@ input{
 }
 
 .btn-second:hover{
-  background:#13132D
+  background:var(--background-color-2)
 }
 
 .btn-second:active{
@@ -329,7 +330,7 @@ input{
 }
 
 .btn-second:focus{
-  border: 2px solid #13132D;  
+  border: 2px solid var(--background-color-2);  
   border: none;
 }
 
